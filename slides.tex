@@ -1,0 +1,226 @@
+\documentclass{beamer}
+
+\usetheme{default}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+
+\title{The German Statutory Pension Insurance (Gesetzliche Rentenversicherung - GRV)}
+\subtitle{Mechanism Design, Demographic "Greying," and the Rentenpaket II Paradigm Shift}
+\author{Richard Schulz \and Jakob Frerichs}
+\institute{Supervised by Dr. Cheng Wan, ETH Zurich \\ Population Ageing and Pension Economics (PAPE)}
+\date{December 2, 2025}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}{The Demographic Time Bomb is Ticking}
+  \begin{itemize}
+    \item By 2035, the last of Germany's "Baby Boomer" generation will have retired.
+    \item The Old-Age Dependency Ratio (OADR) is projected to soar from 35 to over 50.
+    \begin{itemize}
+        \item \textbf{Today:} \textasciitilde3 workers support 1 pensioner.
+        \item \textbf{By 2050:} \textasciitilde2 workers will have to support 1 pensioner.
+    \end{itemize}
+    \item \textbf{The Fiscal Squeeze:} Without reform, the contribution rate is forecast to rise from 18.6\% to over 24\% by 2040, while the purchasing power of pensions falls.
+  \end{itemize}
+  \vspace{1em}
+  \centering
+  \textbf{\large The "Generational Contract" is under unprecedented stress.}
+\end{frame}
+
+\begin{frame}{The Economic Trilemma \& Mackenroth’s Theorem}
+  \textbf{The Fundamental Constraint:} The "Pension Trilemma."
+  \begin{itemize}
+    \item \textbf{Contribution Rate} (\textit{Beitragssatz}): How much workers pay. Politically capped (approx. 20-22\%).
+    \item \textbf{Replacement Rate} (\textit{Rentenniveau}): How much pensioners get. Politically protected (floor at 48\%).
+    \item \textbf{Retirement Age}: How long you work. Also politically sensitive.
+  \end{itemize}
+  \textit{You can only fix two; the third must adjust. Germany is trying to fix all three.}
+  
+  \vspace{1em}
+  \textbf{Theoretical Basis:} \textit{Mackenroth’s Theorem (1952)}:
+  \begin{quote}
+    "All social expenditure must always be paid out of the current national product."
+    \\ \small (Goods for retirees are made by current workers, regardless of funding type).
+  \end{quote}
+\end{frame}
+
+\begin{frame}{Institutional Design: A System Reliant on One Pillar}
+  \textbf{Structure:}
+  \begin{itemize}
+    \item \textbf{Pillar 1 (GRV):} Mandatory Pay-As-You-Go (PAYG).
+    \begin{itemize}
+        \item Covers \textasciitilde90\% of the workforce.
+        \item Provides \textasciitilde75\% of total old-age income.
+        \item \textbf{Result:} A "mono-pillar" system, highly exposed to demographic shifts.
+    \end{itemize}
+    \item \textbf{Pillar 2 (bAV) \& 3 (Private):} Voluntary and have seen limited uptake, unlike in Switzerland or the Netherlands.
+  \end{itemize}
+  \textbf{Financing:}
+  \begin{itemize}
+    \item Contributions (Employer/Employee split 50/50).
+    \item \textbf{Federal Subsidy (\textit{Bundeszuschuss}):} \textasciitilde30\% of the budget comes from general taxes, not contributions.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Microeconomics: The "Points System" (\textit{Entgeltpunkte})}
+  \textbf{The Logic:} Your pension reflects your lifetime relative income, it's not a "final salary" system.
+  \begin{itemize}
+    \item \textbf{Accumulation Mechanism:}
+    \[
+      EP_t = \frac{\text{Individual Gross Income}_t}{\text{Average Gross Income}_t}
+    \]
+    \small{\textbf{Example:} If you earn €50,000 and the average is €50,000, you earn 1.0 point for that year. If you earn €75,000, you get 1.5 points.}
+    \item \textbf{Incentive Structure (The Equivalence Principle):}
+    \begin{itemize}
+        \item Strict linearity ($Contribution \propto Benefit$).
+        \item \textbf{Economic Goal:} Makes contributions feel like "deferred wages," not a tax, to minimize labor supply distortions.
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{The Pension Formula: Turning Points into Euros}
+    \textbf{The Equation:}
+    \[
+        \text{Pension}_{\text{Monthly}} = \sum EP \times ZF \times RAF \times AR
+    \]
+    \textbf{Variables:}
+    \begin{itemize}
+        \item $\sum EP$: Your total lifetime earnings points.
+        \item $ZF$ (Access Factor): An early retirement penalty. 0.3\% permanent cut for every month you retire before the statutory age.
+        \item $RAF$: Pension Type (1.0 for standard old age).
+        \item $AR$ (Current Pension Value): The "exchange rate" for one pension point in Euros per month. This value is adjusted periodically.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{The Adjustment Mechanism (Sustainability Factor)}
+  \textbf{The Goal:} Automatically adjust for demography.
+  \begin{itemize}
+    \item \textbf{The Dampener: The Sustainability Factor (enacted 2004).}
+    \begin{itemize}
+      \item If the dependency ratio (pensioners/workers) worsens, pension increases are "dampened" and do not fully follow wage growth.
+      \[
+        \text{Adjustment}_t \propto \text{WageGrowth}_t \times \left( 1 - \alpha \cdot \frac{\Delta \text{DependencyRatio}_t}{\text{DependencyRatio}_{t-1}} \right)
+      \]
+      \item \textbf{Function:} It shifts some of the demographic risk from the young (contributors) to the old (retirees).
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+
+
+\begin{frame}{Labor Supply \& The Politics of Retirement Age}
+  \begin{itemize}
+    \item \textbf{Policy Response: "Rente mit 67" (2007 Reform).}
+    \begin{itemize}
+        \item Gradually increases the Statutory Retirement Age (SRA) to 67 by 2031 to keep people working longer.
+    \end{itemize}
+    \item \textbf{The Policy Anomaly: "Rente mit 63" (2014).}
+    \begin{itemize}
+        \item Allowed long-term contributors to retire early without penalty.
+        \item \textbf{Economic Critique:} A huge "deadweight loss" by subsidizing the exit of highly productive, skilled labor during a growing labor shortage.
+    \end{itemize}
+    \item \textbf{Result:} The effective retirement age remains below the statutory age.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{The "Standard Pensioner" \& Falling Replacement Rates}
+  \begin{itemize}
+    \item \textbf{Standard Pensioner (\textit{Eckrentner}):} A theoretical person with 45 years of average contributions.
+    \begin{itemize}
+        \item \textbf{Problem:} This ignores fractured careers, part-time work (especially for women), and unemployment, thus painting a deceptively rosy picture.
+    \end{itemize}
+    \item \textbf{Replacement Rate Trends (The Worry):}
+    \begin{itemize}
+        \item The net replacement rate is currently held at \textasciitilde48\%.
+        \item \textit{Forecast (Pre-Reform):} The Sustainability Factor would have caused it to drop to <45\% by 2040.
+    \end{itemize}
+    \item \textbf{Contribution Rate Trends (The Other Worry):}
+    \begin{itemize}
+        \item Currently \textasciitilde18.6\%.
+        \item \textit{Forecast:} Set to break the politically sensitive 20\% barrier by 2028.
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Rentenpaket II: Politics Overrules Economics}
+  \begin{itemize}
+    \item \textbf{The "Double Stop Line" (\textit{Doppelte Haltelinie}):}
+    \begin{itemize}
+        \item A political promise: Keep the replacement rate $\ge 48\%$ AND the contribution rate $\le 20\%$.
+    \end{itemize}
+    \item \textbf{The New Deal (Rentenpaket II):}
+    \begin{itemize}
+        \item Permanently guarantees the 48\% level until 2039.
+        \item \textbf{The Cost:} This deactivates the Sustainability Factor, removing the automatic brake on spending.
+        \item \textbf{The Consequence:} The fiscal burden is shifted entirely to the federal budget via massive tax subsidies (\textit{Bundeszuschuss}).
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Paradigm Shift? The \textit{Generationenkapital}}
+    \textbf{Concept:} Create a Sovereign Wealth Fund to help subsidize the pension system.
+    \begin{itemize}
+        \item \textbf{Mechanism: "Debt-Financed Arbitrage."}
+        \begin{itemize}
+            \item The state borrows money at low interest rates (cost of government bonds).
+            \item It invests this money in a globally diversified portfolio of stocks (aiming for higher equity returns).
+            \item The goal is to profit from the spread: $r_{\text{equity}} > r_{\text{bond}}$.
+        \end{itemize}
+        \item \textbf{Target:} €200bn fund by the mid-2030s.
+        \item \textbf{Critique:}
+        \begin{itemize}
+            \item \textbf{Too Small:} Experts argue it needs >€1 Trillion to have a meaningful impact on contribution rates.
+            \item \textbf{Governance Risks:} Can investment decisions remain free from political interference?
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{The Unseen Debt Burden}
+    \begin{itemize}
+        \item \textbf{Fiscal Crowding Out:}
+        \begin{itemize}
+            \item Pension subsidies already consume \textasciitilde25-30\% of the entire German federal budget.
+            \item This severely limits fiscal space for infrastructure, defense, digitalization, and education.
+        \end{itemize}
+        \item \textbf{Implicit Pension Debt:}
+        \begin{itemize}
+            \item The present value of all pension promises the state has made is enormous: \textbf{over 300\% of Germany's GDP}. This is the "hidden" debt.
+        \end{itemize}
+        \item \textbf{The "Boomer Voter" Effect:}
+        \begin{itemize}
+            \item The large voting bloc of the elderly creates strong political resistance to actuarially necessary cuts (Median Voter Theorem).
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Conclusion}
+  \textbf{Summary:}
+  \begin{itemize}
+    \item Germany’s PAYG system is efficient in its design but fundamentally vulnerable to its own demographic decline.
+    \item Recent reforms (\textit{Rentenpaket II}) have prioritized short-term benefit security for current pensioners over long-term fiscal sustainability, effectively passing the bill to future generations.
+  \end{itemize}
+  \textbf{The Outlook:}
+  \begin{itemize}
+    \item The \textit{Generationenkapital} is a historic step towards capital funding, but it is too small to solve the structural problem.
+    \item The "Contract between Generations" is being rewritten, with the young bearing the demographic and fiscal risk.
+  \end{itemize}
+  \vspace{1em}
+  \centering
+  \textbf{\large The final question remains: Can productivity growth outpace the demographic drag?}
+\end{frame}
+
+\begin{frame}{References}
+  \begin{itemize}
+    \item German Council of Economic Experts (Sachverständigenrat).
+    \item Deutsche Rentenversicherung (DRV) Reports 2023/2024.
+    \item OECD Pensions at a Glance 2023.
+    \item Mackenroth, G. (1952). \textit{Die Reform der Sozialpolitik}.
+    \item \textit{Note: Comparisons to Swiss and Japanese systems drawn from course materials}.
+  \end{itemize}
+\end{frame}
+
+\end{document}
