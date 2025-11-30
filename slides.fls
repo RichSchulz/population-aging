@@ -374,11 +374,6 @@ INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/sansmathaccent/mathker
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/sansmathaccent/mathkerncmssi8.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/sansmathaccent/mathkerncmssi8.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmssbx10.tfm
-INPUT ./three_pillars_chart.jpg
-INPUT ./three_pillars_chart.jpg
-INPUT ./three_pillars_chart.jpg
-INPUT ./three_pillars_chart.jpg
-INPUT ./three_pillars_chart.jpg
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/tcss1000.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmssi12.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
